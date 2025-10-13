@@ -1,0 +1,4 @@
+Most undergraduate Operating Systems textbooks have a module on Synchro-
+nization, which usually presents a set of primitives (mutexes, semaphores, mon-
+itors, and sometimes condition variables), and classical problems like readers-
+writers and producers-consumers.

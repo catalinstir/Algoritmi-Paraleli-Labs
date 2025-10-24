@@ -113,4 +113,62 @@ Daca scoatem apelurile de `sleep` la prima vedere pare sa fi scapat de deadlock,
 Putem avea o versiune care pune `lock`-urile in ordinea corecta, independenta de thread_id, pastrand `sleep`-urile.
 
 ## 8. Deadlock 3
+Exercitiul se rezolva prin setarea atributului `PTHREAD_MUTEX_RECURSUVE` pe mutex, lucru ce ne permite un dublu-lock.
 
+## 9. Sum Vector Values
+Timp pentru programul secvential si `N=1.000.000.000`:
+```bash
+catalin@debian:~/atm/Algoritmi-Paraleli/lab03$ time bin/sumVectorValues-seq 1000000000 $(nproc) 0
+Sum: 500000000500000000 
+
+real    0m8.419s
+user    0m4.797s
+sys     0m2.901s
+```
+Timp executie program paralel:
+```bash
+catalin@debian:~/atm/Algoritmi-Paraleli/lab03$ time bin/9 1000000000 $(nproc) 0
+Sum: 500000000500000000 
+
+real    0m5.908s
+user    0m4.459s
+sys     0m1.444s
+```
+Test cu script-ul:
+```bash
+(dev) [17ms][main][~/atm/Algoritmi-Paraleli/lab03]$ bash testCorrectnessIntensive.sh bin/sumVectorValues-seq bin/9 100000 10000 0 | tail
+rm: cannot remove 'out*': No such file or directory
+Test 9992/10000
+Test 9993/10000
+Test 9994/10000
+Test 9995/10000
+Test 9996/10000
+Test 9997/10000
+Test 9998/10000
+Test 9999/10000
+Test 10000/10000
+Output correct on intensive test
+```
+## 10. Sum Vec Val Paralel
+Comparatie timpi:
+Algoritmul secvential:
+```bash
+catalin@debian:~/atm/Algoritmi-Paraleli/lab03$ time bin/sumVectorValues 1000000000 0 $(nproc)
+
+real    0m5.702s
+user    0m4.385s
+sys     0m1.316s
+
+```
+Algoritmul paralelizat:
+```bash
+catalin@debian:~/atm/Algoritmi-Paraleli/lab03$ time bin/sumVectorValues-fix 1000000000 0 $(nproc)
+
+real    0m4.133s
+user    0m6.104s
+sys     0m1.215s
+
+```
+
+## 11. PrepStrassen
+Am creat cate un thread pentru fiecare M<sub>i</sub> si cate o functie worker.

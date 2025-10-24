@@ -1,4 +1,3 @@
-// race cond seq
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,14 +7,18 @@ int N;
 int P;
 int a;
 const int TOADD = 2;
+pthread_mutex_t adder_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void* threadFunction(void* var) {
-    (void)var; // unused
+    // int thread_id = *(int*)var;
+    (void)var;
     int i;
 
-    // TODO MAKE OPERATIONS ON a SAFE
-    for (i = 0; i < N; i++)
-        a = a + TOADD;
+    for (i = 0; i < N; i++) {
+        pthread_mutex_lock(&adder_mutex);
+        a += TOADD;
+        pthread_mutex_unlock(&adder_mutex);
+    }
 
     return NULL;
 }
@@ -56,15 +59,20 @@ int main(int argc, char* argv[]) {
     getArgs(argc, argv);
     init();
 
-    P = 2; // ATTENTION, WE OVERWRITE THE NUMBER OF THREADS. WE ONLY NEED 2
+    P = 2;
     int i;
 
+    pthread_t tid[P];
     int thread_id[P];
     for (i = 0; i < P; i++)
         thread_id[i] = i;
 
     for (i = 0; i < P; i++) {
-        threadFunction(&(thread_id[i]));
+        pthread_create(&(tid[i]), NULL, threadFunction, &(thread_id[i]));
+    }
+
+    for (i = 0; i < P; i++) {
+        pthread_join(tid[i], NULL);
     }
 
     print();

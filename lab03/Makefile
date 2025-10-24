@@ -1,17 +1,21 @@
-CFLAGS = -g -O0 -Wall -Wextra -pthread
-LDFLAGS = -pthread
+CC = gcc
+CFLAGS = -Wall -Wextra -lpthread -g
 
 SRC_DIR = src
 BIN_DIR = bin
 
-TARGETS = 1 2 3 4 5 6 7 8 9 10 11 barrier-seq prepStrassen-seq semaphoreSignal-seq sumVectorValues-seq 
+SRCS = $(wildcard $(SRC_DIR)/*.c)
+TARGETS = $(patsubst $(SRC_DIR)/%.c, $(BIN_DIR)/%, $(SRCS))
 
-all: $(TARGETS)
-	@echo "Build complete."
+all: $(BIN_DIR) $(TARGETS)
 
-$(TARGETS): %: $(SRC_DIR)/%.c
-	@mkdir -p $(BIN_DIR)
-	gcc $(CFLAGS) $< -o $(BIN_DIR)/$@ $(LDFLAGS)
+$(BIN_DIR)/%: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $< -o $@
+
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
 
 clean:
-	rm -f $(BIN_DIR)/*
+	rm -rf $(BIN_DIR)
+
+.PHONY: all clean

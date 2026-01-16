@@ -1,0 +1,22 @@
+CC = gcc
+CFLAGS = -O3 -Wall -Wextra -lpthread
+
+SRC_DIR = src
+BIN_DIR = bin
+
+SRCS = $(wildcard $(SRC_DIR)/*.c)
+TARGETS = $(patsubst $(SRC_DIR)/%.c, $(BIN_DIR)/%, $(SRCS))
+
+all: $(BIN_DIR) $(TARGETS)
+
+$(BIN_DIR)/%: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $< -o $@
+
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
+
+clean:
+	rm -rf $(BIN_DIR)
+
+.PHONY: all clean
+

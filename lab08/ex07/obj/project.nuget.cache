@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QsD9rzqsIRw=",
+  "success": true,
+  "projectFilePath": "/home/catalin/atm/Algoritmi-Paraleli/lab08/ex07/ex07.csproj",
+  "expectedPackageFiles": [
+    "/home/catalin/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/catalin/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/catalin/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}

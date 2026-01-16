@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ex05": {
+      "commandName": "Project",
+      "commandLineArgs": "100 4"
+    }
+  }
+}

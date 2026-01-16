@@ -1,0 +1,15 @@
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\bin\Debug\net6.0\ex02.exe
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\bin\Debug\net6.0\ex02.deps.json
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\bin\Debug\net6.0\ex02.runtimeconfig.json
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\bin\Debug\net6.0\ex02.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\bin\Debug\net6.0\ex02.pdb
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.csproj.AssemblyReference.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.AssemblyInfoInputs.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.AssemblyInfo.cs
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.csproj.CoreCompileInputs.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\refint\ex02.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.pdb
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ex02.genruntimeconfig.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab08\ex02\obj\Debug\net6.0\ref\ex02.dll

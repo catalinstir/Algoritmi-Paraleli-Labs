@@ -1,0 +1,15 @@
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\bin\Debug\net6.0\ex11.exe
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\bin\Debug\net6.0\ex11.deps.json
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\bin\Debug\net6.0\ex11.runtimeconfig.json
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\bin\Debug\net6.0\ex11.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\bin\Debug\net6.0\ex11.pdb
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.csproj.AssemblyReference.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.AssemblyInfoInputs.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.AssemblyInfo.cs
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.csproj.CoreCompileInputs.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\refint\ex11.dll
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.pdb
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.genruntimeconfig.cache
+C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ref\ex11.dll

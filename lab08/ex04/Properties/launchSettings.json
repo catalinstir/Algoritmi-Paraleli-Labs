@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ex04": {
+      "commandName": "Project",
+      "commandLineArgs": "100 4"
+    }
+  }
+}
